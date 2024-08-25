@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --f-all: "Rubik", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--f-all);
+}
+
+body {
+    background-color: white;
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+/* MAIN TOP */
+
+.main-top {
+    padding-block: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    background: url(./images/pattern-bg-desktop.png) no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ip-address-tracker-text > h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    width: 550px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.input > input {
+    height: 60px;
+    border: 0;
+    font-size: 18px;
+    color: hsl(0, 0%, 17%);
+    padding-left: 25px;
+    border-radius: 1rem 0 0 1rem;
+    outline: none;
+}
+
+.input > button {
+    width: 60px;
+    height: 60px;
+    border: 0;
+    background-color: hsl(0, 0%, 1%);
+    border-radius: 0 1rem 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.input > button:hover {
+    background-color: hsl(0, 0%, 17%);
+}
